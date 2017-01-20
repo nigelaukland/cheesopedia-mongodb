@@ -1,23 +1,80 @@
-<!DOCTYPE html>
-<html data-ng-app="cheesopedia">
+<html>
+
 <head>
-    <title>Welcome to cheesopedia.com</title>
+  <meta name="keywords" content="cheese">
+  <meta name="description" content="Online resource for cheese">
+  <title>cheesopedia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://v4.pingendo.com/assets/bootstrap/themes/default.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <div>
-        <!-- Placeholder for views -->
-        <div data-ng-view=""></div>  
+  <div class="section section-fill-height section-opaque-light text-xs-center">
+    <div class="background-image" style="background-image : url('images/Cheese_Knife_Header.JPG')"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-1 pi-draggable pi-item">cheesopedia
+                            <br>
+                        </h1>
+          <p class="lead pi-draggable pi-item">welcome</p>
+          <a href="#discover" class="btn btn-lg btn-primary m-y-lg">Explore</a>
+        </div>
+      </div>
     </div>
-    
-    <!-- Vendor scripts -->
-    <script src="javascripts/angular.js"></script>
-    <script src="javascripts/angular-route.js"></script>
-    
-    <!-- App scripts -->
-    <script src="cheesopedia.js"></script>
-    <script src="controllers/controllers.js"></script>
-    <script src="factories/factories.js"></script>
-    
-    
+  </div>
+  <div class="p-y-3 section text-xs-center" id="discover">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="add-cheese.html">
+            <i class="fa fa-5x fa-fw m-y-1 m-y-lg text-primary fa-cloud-upload"></i>
+          </a>
+          <h1>Add</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua&nbsp;Ut enim ad minim veniam, quis nostrud</p>
+        </div>
+        <div class="col-md-4">
+          <a href="http://cheesopedia.com">
+            <i class="fa fa-5x fa-fw m-y-1 m-y-lg text-primary fa-eye"></i>
+          </a>
+          <h1>Browse</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua&nbsp;Ut enim ad minim veniam, quis nostrud</p>
+        </div>
+        <div class="col-md-4">
+          <a href="http://api.cheesopedia.com" target="_blank">
+            <i class="fa fa-5x fa-fw m-y-1 m-y-lg text-primary fa-code"></i>
+          </a>
+          <h1>Integrate</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua&nbsp;Ut enim ad minim veniam, quis nostrud</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-y-3 section text-xs-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+          <a href="https://www.facebook.com/cheesopedia/"><i class="fa fa-5x fa-fw fa-facebook"></i></a>
+        </div>
+        <div class="col-xs-4">
+          <a href="https://twitter.com/cheesopedia"><i class="fa fa-5x fa-fw fa-twitter"></i></a>
+        </div>
+        <div class="col-xs-4">
+          <a href="https://github.com/nigelaukland/cheesopedia-mongodb"><i class="fa fa-5x fa-fw fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="javascripts/jquery-1.11.3.js"></script> -->
+  <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  <!-- <script type="text/javascript" src="javascripts/cheesopedia.js"></script> -->
+
 </body>
+
 </html>

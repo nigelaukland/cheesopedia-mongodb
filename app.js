@@ -11,6 +11,8 @@ var app             = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Serve static content
 app.use(express.static(path.join(__dirname, "public"))); 
 
 // Global declaration of mongodb database
